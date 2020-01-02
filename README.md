@@ -4,7 +4,7 @@ Credit for this idea and goes to Brian Voon of Lets' Build That App tutorials.  
 
 https://www.youtube.com/watch?v=514A7yzznJE&t=579s
 
-If you don't already subscribe, you should.  Great stu
+If you don't already subscribe, you should.  Great stuff
 
 To present a fullscreen modal, 
 
