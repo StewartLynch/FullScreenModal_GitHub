@@ -82,9 +82,11 @@ For example:
 struct ModalView: View {
     var body: some View {
         VStack {
+            // This is your modal content here
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.green)
                 .frame(width: 200, height: 200)
+            // The spacer is to push up the FullModal close button
             Spacer()
         }
     }
