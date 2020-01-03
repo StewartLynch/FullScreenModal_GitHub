@@ -20,7 +20,9 @@ struct ContentView: View {
                 }
             .navigationBarTitle("Full Screen Modal")
             }
-            FullModal(isPresented: $isPresented) {
+            
+            FullModal(isPresented: $isPresented,
+                      backgroundColor: .red, buttonColor: .white) {
                 ModalView()
             }
         }

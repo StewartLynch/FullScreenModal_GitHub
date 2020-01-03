@@ -10,11 +10,13 @@ import SwiftUI
 
 struct FullModal<Content:View>: View {
     @Binding var isPresented:Bool
+    var backgroundColor:UIColor?
+    var buttonColor:UIColor?
     let modalView: () -> Content
     let thisWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
     var body: some View {
         ZStack {
-            Color(UIColor.secondarySystemBackground)
+            Color((backgroundColor == nil ?  UIColor.secondarySystemBackground : backgroundColor)!)
             VStack {
                 HStack {
                     Spacer()
@@ -24,6 +26,7 @@ struct FullModal<Content:View>: View {
                         }
                     }) {
                         Image(systemName:"xmark.circle.fill")
+                            .foregroundColor(buttonColor == nil ? Color(UIColor.blue) : Color(buttonColor!))
                     }
                 }
                 .padding(.horizontal)
