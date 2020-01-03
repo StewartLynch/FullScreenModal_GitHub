@@ -12,7 +12,7 @@ To present a fullscreen modal,
 2. Create a @State variable that will be toggled by some action that will result in the full modal being presented.
 3.   The magic will happen as the second view of your newly created ZStack
 
-<img src="FullModal-8004251.gif" alt="FullModal" style="zoom:50%;" />
+![FullModal](ReadMeImages/FullModal.gif)
 
 ```swift
 struct ContentView: View {
@@ -94,12 +94,10 @@ struct ModalView: View {
 }
 ```
 
-
-
 Now, back in your original view, you can replace the `// This is where the magic will happen`with a call to the FullModalView, passing in your State variable and your custom modal view as the closure.
 
 Here is what my original ContentView now looks like
 
-![image-20200102142656580](image-20200102142656580.png)
+![CodeSnippet](ReadMeImages/CodeSnippet.png)
 
 That is all there is to it.
