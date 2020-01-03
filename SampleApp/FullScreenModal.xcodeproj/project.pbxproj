@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBEDDD5723BF11C800C27922 /* FullModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDDD5623BF11C800C27922 /* FullModal.swift */; };
+		BBEDDD5923BF121100C27922 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEDDD5823BF121100C27922 /* ModalView.swift */; };
 		BBF2F79823BE5B5F002FC29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF2F79723BE5B5F002FC29D /* AppDelegate.swift */; };
 		BBF2F79A23BE5B5F002FC29D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF2F79923BE5B5F002FC29D /* SceneDelegate.swift */; };
 		BBF2F79C23BE5B5F002FC29D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF2F79B23BE5B5F002FC29D /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBEDDD5623BF11C800C27922 /* FullModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullModal.swift; sourceTree = "<group>"; };
+		BBEDDD5823BF121100C27922 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		BBF2F79423BE5B5F002FC29D /* FullScreenModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullScreenModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF2F79723BE5B5F002FC29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF2F79923BE5B5F002FC29D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				BBF2F79723BE5B5F002FC29D /* AppDelegate.swift */,
 				BBF2F79923BE5B5F002FC29D /* SceneDelegate.swift */,
 				BBF2F79B23BE5B5F002FC29D /* ContentView.swift */,
+				BBEDDD5823BF121100C27922 /* ModalView.swift */,
+				BBEDDD5623BF11C800C27922 /* FullModal.swift */,
 				BBF2F79D23BE5B63002FC29D /* Assets.xcassets */,
 				BBF2F7A223BE5B63002FC29D /* LaunchScreen.storyboard */,
 				BBF2F7A523BE5B63002FC29D /* Info.plist */,
@@ -148,7 +154,9 @@
 			files = (
 				BBF2F79823BE5B5F002FC29D /* AppDelegate.swift in Sources */,
 				BBF2F79A23BE5B5F002FC29D /* SceneDelegate.swift in Sources */,
+				BBEDDD5723BF11C800C27922 /* FullModal.swift in Sources */,
 				BBF2F79C23BE5B5F002FC29D /* ContentView.swift in Sources */,
+				BBEDDD5923BF121100C27922 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

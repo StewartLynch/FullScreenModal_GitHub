@@ -34,41 +34,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ModalView: View {
-    var body: some View {
-        VStack {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.green)
-                .frame(width: 200, height: 200)
-            Spacer()
-        }
-    }
-}
 
-struct FullModal<Content:View>: View {
-    @Binding var isPresented:Bool
-    let modalView: () -> Content
-    let thisWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
-    var body: some View {
-        ZStack {
-            Color(UIColor.secondarySystemBackground)
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        withAnimation {
-                            self.isPresented = false
-                        }
-                    }) {
-                        Image(systemName:"xmark.circle.fill")
-                    }
-                }
-                .padding(.horizontal)
-                modalView()
-            }.padding(.top,thisWindow?.safeAreaInsets.top)
-            Spacer()
-        }
-        .offset(x: 0, y: isPresented ? 0 : thisWindow?.frame.height ?? 0)
-        .edgesIgnoringSafeArea(.all)
-    }
-}
