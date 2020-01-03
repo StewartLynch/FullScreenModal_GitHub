@@ -101,3 +101,20 @@ Here is what my original ContentView now looks like
 ![CodeSnippet](ReadMeImages/CodeSnippet.png)
 
 That is all there is to it.
+
+## Optional Parameters
+
+The default background for the fullscreen modal is `.secondarySystemBackground` and the default color for the close button is `.blue`
+
+If you wish to change these colors, you can pass these colors in along with your `isPresented` state variable.  These are **optional**
+
+For example, the if you want to have a red modal background with a white close button, you could do this:
+
+```swift
+FullModal(isPresented: $isPresented,
+          backgroundColor: .red,
+          buttonColor: .white) {
+       ModalView()
+}
+```
+
