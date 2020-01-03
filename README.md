@@ -47,7 +47,7 @@ struct FullModal<Content:View>: View {
     let thisWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
     var body: some View {
         ZStack {
-            Color.white
+            Color(UIColor.secondarySystemBackground)
             VStack {
                 HStack {
                     Spacer()
@@ -68,6 +68,7 @@ struct FullModal<Content:View>: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
+
 ```
 
 Once you have that struct in place, you can create your own unique content to serve as the modal view itself.
@@ -82,6 +83,7 @@ For example:
 struct ModalView: View {
     var body: some View {
         VStack {
+          
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.green)
                 .frame(width: 200, height: 200)
