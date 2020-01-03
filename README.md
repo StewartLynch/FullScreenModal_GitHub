@@ -4,7 +4,7 @@ Credit for this idea and goes to Brian Voon of Lets' Build That App tutorials.  
 
 https://www.youtube.com/watch?v=514A7yzznJE&t=579s
 
-If you don't already subscribe, you should.  Great stu
+If you don't already subscribe, you should.  Great stuff
 
 To present a fullscreen modal, 
 
@@ -83,10 +83,11 @@ For example:
 struct ModalView: View {
     var body: some View {
         VStack {
-          
+            // This is your modal content here
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.green)
                 .frame(width: 200, height: 200)
+            // The spacer is to push up the FullModal close button
             Spacer()
         }
     }
